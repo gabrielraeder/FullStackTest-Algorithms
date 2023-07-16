@@ -4,8 +4,7 @@ def cyclotron(particle, size):
     if particle == "e":
         for i in range(size):
             matrix[0][i] = "e"
-            if i != size - 1:
-                matrix[i + 1][-1] = "e"
+            matrix[i][-1] = "e"
     elif particle == "p":
         for i in range(size):
             matrix[0][i] = matrix[i][0] = matrix[-1][i] = matrix[i][
